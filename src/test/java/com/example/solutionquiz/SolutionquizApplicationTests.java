@@ -2,7 +2,7 @@ package com.example.solutionquiz;
 
 import com.example.solutionquiz.business.Answer;
 import com.example.solutionquiz.business.Question;
-import com.example.solutionquiz.business.dao.QuestionRepository;
+import com.example.solutionquiz.dao.QuestionRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

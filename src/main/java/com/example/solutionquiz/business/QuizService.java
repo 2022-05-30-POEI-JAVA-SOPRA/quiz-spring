@@ -1,7 +1,7 @@
 package com.example.solutionquiz.business;
 
-import com.example.solutionquiz.business.dao.AnswerRepository;
-import com.example.solutionquiz.business.dao.QuestionRepository;
+import com.example.solutionquiz.dao.AnswerRepository;
+import com.example.solutionquiz.dao.QuestionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

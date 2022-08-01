@@ -1,4 +1,4 @@
-package com.example.solutionquiz.business.api;
+package com.example.solutionquiz.api;
 
 import com.example.solutionquiz.business.Question;
 import com.example.solutionquiz.business.QuizService;

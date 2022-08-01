@@ -2,15 +2,7 @@ package com.example.solutionquiz;
 
 import com.example.solutionquiz.business.Answer;
 import com.example.solutionquiz.business.Question;
-import com.example.solutionquiz.business.dao.QuestionRepository;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 
 class UnitTests {
 
