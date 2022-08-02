@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <a href="/scores">Classement</a>
+
+    <h1>Let's play !</h1>
+
+    <form method="post" action="play">
+        <input type="hidden" name="questionId" th:value="${question.id}">
+
+        <label for="pseudo">Pseudo</label>
+        <input type="text" name="pseudo" id="pseudo" required="required">
+
+        <fieldset>
+            <legend th:text="${question.title}"></legend>
+
+            <div th:each="answer,iterator : ${question.answers}">
+                <div th:if="${iterator.index == 0}">
+                    <input type="radio" id="answerId" name="answerId" th:value="${answer.id}" checked>
+                    <label for="answerId" th:text="${answer.title}"></label>
+                </div>
+                <div th:unless="${iterator.index == 0}">
+                    <input type="radio" id="answerId" name="answerId" th:value="${answer.id}">
+                    <label for="answerId" th:text="${answer.title}"></label>
+                </div>
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Jouer">
+    </form>
+
+</body>
+</html>

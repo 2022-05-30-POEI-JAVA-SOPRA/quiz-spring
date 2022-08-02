@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <a href="/play">Jouer</a>
+
+    <h1>Classement</h1>
+
+    <ul th:each="p:${players}">
+        <li th:text="${p.score} + ' : ' + ${p.name}"></li>
+    </ul>
+
+
+</body>
+</html>
